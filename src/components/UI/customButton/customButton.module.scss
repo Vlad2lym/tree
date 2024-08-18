@@ -1,0 +1,34 @@
+.customButton {
+  padding: 6px 12px;
+  background-color: transparent;
+  border: 1px solid #244C98;
+  border-radius: 4px;
+  color: #244C98;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #D7E2F6;
+  }
+}
+  
+.customButton.primary {
+  background-color: #244C98;
+  color: white;
+
+  &:hover {
+    background-color: lighten($color: #244C98, $amount: 5);
+  }
+}
+
+.customButton.danger {
+  color: red;
+  border-color: red;
+
+  &:hover {
+    background-color: lighten($color: red, $amount: 45);
+  }
+}

@@ -1,0 +1,62 @@
+.tree-node {
+    display: flex;
+    flex-direction: column;
+}
+
+.tree-node__body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tree-node__body--clicked {
+    background-color: darkgrey;
+}
+
+.tree-node__arrow {
+    width: 20px;
+    height: 20px;
+}
+
+.tree-node__name {
+    margin: 0;
+    font-weight: 600;
+}
+
+.tree-node__manage-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 15px;
+
+    button {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+        min-width: 25px;
+        min-height: 25px;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.tree-node__create-btn {
+    background-image: url('../../img/create-node-icon.png');
+    width: 30px;
+    height: 30px;
+}
+
+.tree-node__edit-btn {
+    background-image: url('../../img/edit-node-icon.png');
+}
+
+.tree-node__delete-btn {
+    background-image: url('../../img/delete-node-icon.png');
+}
+
+.tree-node__children {
+    margin-left: 20px;
+}

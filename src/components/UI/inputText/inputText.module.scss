@@ -1,0 +1,26 @@
+.text-field {
+    position: relative;
+  }
+  
+  .text-field__input {
+    display: block;
+    width: calc(100% - 24px);
+    height: 56px;
+    padding-left: 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1;
+    color: black;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+  
+    &::placeholder {
+      color: darkgrey;
+    }
+  
+    &:focus {
+      outline: 1px solid transparent;
+    }
+}
